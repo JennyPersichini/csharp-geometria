@@ -50,6 +50,35 @@ namespace csharp_geometria
 
         public void DisegnaRettangolo()
         {
+            string rettangolo = " ";
+
+            for (int i = 0; i < baseRettangolo; i++)
+            {
+                rettangolo += "--";
+            }
+
+            rettangolo += "\n";
+
+            for (int i = 0; i < altezzaRettangolo; i++)
+            {
+                rettangolo += "|";
+
+                for (int index = 0; index < baseRettangolo; index++)
+                {
+                    rettangolo += "  ";
+                }
+
+                rettangolo += ("|\n");
+            }
+
+            rettangolo += " ";
+
+            for (int i = 0; i < baseRettangolo; i++)
+            {
+                rettangolo += "--";
+            }
+
+            Console.WriteLine(rettangolo);
 
         }
 

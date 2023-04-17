@@ -25,3 +25,5 @@ Console.WriteLine("");
 Rettangolo rettangoloUtente = new Rettangolo(baseRettangoloUtente, altezzaRettangoloUtente);
 
 rettangoloUtente.stampaRettangolo();
+
+rettangoloPC.DisegnaRettangolo();
