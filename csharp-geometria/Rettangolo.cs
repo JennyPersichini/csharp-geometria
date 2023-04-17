@@ -12,5 +12,37 @@ namespace csharp_geometria
 {
     internal class Rettangolo
     {
+        public int baseRettangolo;
+        public int altezzaRettangolo;
+
+        public Rettangolo(int baseRettangolo, int altezzaRettangolo)
+        {
+            this.baseRettangolo = baseRettangolo;
+            this.altezzaRettangolo = altezzaRettangolo;
+        }
+
+        public int calcolaPerimetro()
+        {
+            int perimetro = (baseRettangolo + altezzaRettangolo) * 2;
+            return perimetro;
+        }
+
+        public int calcolaArea()
+        {
+            int area = baseRettangolo * altezzaRettangolo;
+            return area;
+        }
+
+        public void stampaRettangolo()
+        {
+            Console.Write("—— Rettangolo ——");
+            Console.Write("");
+            Console.Write($"base: {baseRettangolo} cm");
+            Console.Write($"altezza: {altezzaRettangolo} cm");
+            Console.Write($"perimetro: {calcolaPerimetro()} cm");
+            Console.Write($"area: {calcolaArea()} cm2");
+        }
+
     }
+
 }
